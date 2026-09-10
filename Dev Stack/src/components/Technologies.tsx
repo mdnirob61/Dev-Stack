@@ -1,5 +1,6 @@
 import { use, type Dispatch, type SetStateAction } from 'react';
 import type { Technology } from '../technology';
+// import { toast } from "react-toastify";
 
 interface TechnologiesProps {
     technologyPromise: Promise<Technology[]>;

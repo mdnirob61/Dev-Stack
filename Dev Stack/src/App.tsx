@@ -5,6 +5,8 @@ import type { Technology } from './technology';
 import Technologies from './components/Technologies';
 import Footer from './components/Footer';
 import YourStack from './components/YourStack';
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 
 const technologyFetch = async (): Promise<Technology[]> => {
@@ -31,6 +33,7 @@ function App() {
         />
       </Suspense>
       <YourStack stack={stack} setStack={setStack}></YourStack>
+      {/* <ToastContainer aria-label="Notifications" /> */}
       <Footer></Footer>
     </>
   )
