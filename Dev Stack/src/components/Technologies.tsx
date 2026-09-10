@@ -1,14 +1,23 @@
-import React, { use } from 'react';
+import { use, type Dispatch, type SetStateAction } from 'react';
 import type { Technology } from '../technology';
 
 interface TechnologiesProps {
     technologyPromise: Promise<Technology[]>
+    stack: Technology[];
+    setStack: Dispatch<SetStateAction<Technology[]>>;
 }
 
-const Technologies = ({ technologyPromise }: TechnologiesProps) => {
+const Technologies = ({ technologyPromise, stack, setStack }: TechnologiesProps) => {
 
     const technologies = use(technologyPromise);
-    console.log(technologies);
+    // console.log(technologies);
+
+    const handleAddToStack = (technology: Technology) => {
+        const newStack = [...stack, technology];
+
+        console.log(newStack);
+        setStack(newStack);
+    };
 
     return (
         <div className="container mx-auto max-w-[1300px] px-5 sm:px-8 lg:px-10 mt-16">
@@ -52,7 +61,7 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
                                 ⭐ {technology.rating}
                             </div>
                         </div>
-                        <button
+                        <button onClick={() => handleAddToStack(technology)}
                             className="w-full mt-4 bg-[#d45b36] text-white text-[1rem] py-3 rounded-md hover:bg-[#fd683b] transition"
                         >
                             Add to Stack

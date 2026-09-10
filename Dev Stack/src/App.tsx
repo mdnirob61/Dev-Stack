@@ -15,13 +15,17 @@ function App() {
   const [technologyPromise] = useState(() => technologyFetch());
   // console.log(technologyPromise);
 
+  const [stack, setStack] = useState<Technology[]>([])
+
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <Suspense fallback={<p>Loading technologies...</p>}>
+      <Suspense fallback={<p className='text-5xl font-bold text-center'>Loading Technologies...</p>}>
         <Technologies
           technologyPromise={technologyPromise}
+          stack={stack}
+          setStack={setStack}
         />
       </Suspense>
     </>
