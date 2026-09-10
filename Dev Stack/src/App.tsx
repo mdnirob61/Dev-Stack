@@ -3,6 +3,8 @@ import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import type { Technology } from './technology';
 import Technologies from './components/Technologies';
+import Footer from './components/Footer';
+import YourStack from './components/YourStack';
 
 
 const technologyFetch = async (): Promise<Technology[]> => {
@@ -28,6 +30,8 @@ function App() {
           setStack={setStack}
         />
       </Suspense>
+      <YourStack stack={stack} setStack={setStack}></YourStack>
+      <Footer></Footer>
     </>
   )
 }
