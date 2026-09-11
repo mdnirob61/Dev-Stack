@@ -32,8 +32,6 @@ function App() {
           setStack={setStack}
         />
       </Suspense>
-      <YourStack stack={stack} setStack={setStack}></YourStack>
-      {/* <ToastContainer aria-label="Notifications" /> */}
       <Footer></Footer>
     </>
   )

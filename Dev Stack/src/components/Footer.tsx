@@ -10,9 +10,9 @@ const Footer = () => {
                     <p className='text-[#64748B] mt-3'>Curated tools, technologies, and resources for developers building <br></br>
                         modern software.</p>
                     <ul className='flex items-center gap-5 mt-7'>
-                        <li className='text-[#475569]'>Github</li>
-                        <li className='text-[#475569]'>Twiter</li>
-                        <li className='text-[#475569]'>LinkedIn</li>
+                        <li className='font-semibold text-[#475569]'>Github</li>
+                        <li className='font-semibold text-[#475569]'>Twiter</li>
+                        <li className='font-semibold text-[#475569]'>LinkedIn</li>
                     </ul>
                 </div>
                 <div className='flex justify-between gap-50'>

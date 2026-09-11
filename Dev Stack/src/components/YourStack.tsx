@@ -15,17 +15,17 @@ const YourStack = ({ stack, setStack }: YourStackProps) => {
     }
 
     return (
-        <div>
-            <h2>Your Stack</h2>
-            <p>
-                {stack.length} Technology Selected
+        <div className='border border-gray-200 rounded-xl p-5 shadow-sm max-w-90'>
+            <h2 className='text-[#0F172A] text-2xl font-bold'>Your Stack</h2>
+            <p className='text-[#94A3B8]'>
+                {stack.length > 0 ? `${stack.length} Technology Selected` : 'No technologies selected yet'}
             </p>
-            <div className='mt=5 space-y-3'>
+            <div className='mt-5 space-y-3'>
                 {
                     stack.map((technology) => (
-                        <div className='flex items-center justify-between border border-gray-200 rounded-lg p-3'>
+                        <div key={technology.id} className='flex items-center justify-between border border-gray-200 rounded-lg p-3'>
                             <div className='flex items-center gap-3'>
-                                <img className='className="w-8 h-8"' src={technology.icon} alt={technology.name} />
+                                <img className='w-8 h-8' src={technology.icon} alt={technology.name} />
                                 <div>
                                     <h2 className='font-semibold'>{technology.name}</h2>
                                     <p className='text-xs text-gray-500'>{technology.category}</p>
