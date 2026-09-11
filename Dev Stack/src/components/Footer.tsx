@@ -9,13 +9,14 @@ const Footer = () => {
                     <img className='h-10 w-[160px]' src={Logo} alt="Dev Stack" />
                     <p className='text-[#64748B] mt-3 max-w-md'>Curated tools, technologies, and resources for developers building
                         modern software.</p>
-                    <ul className='flex items-center gap-5 mt-7'>
-                        <li className='font-semibold text-[#475569]'>Github</li>
-                        <li className='font-semibold text-[#475569]'>Twitter</li>
-                        <li className='font-semibold text-[#475569]'>LinkedIn</li>
-                    </ul>
+                    <div className='flex items-center gap-5 mt-7'>
+                        <a className='font-semibold text-[#475569]' href='https://github.com/'>Github</a>
+                        <a className='font-semibold text-[#475569]' href='https://x.com/'>Twitter</a>
+                        <a className='font-semibold text-[#475569]' href='https://www.linkedin.com/'>LinkedIn</a>
+                    </div>
+
                 </div>
-                <div className='flex flex-wrap justify-between gap-10 lg:gap-20'>
+                <div className='flex flex-wrap justify-between gap-10 lg:gap-45'>
                     <div>
                         <h2 className='font-semibold mb-4 text-xl'>PRODUCT</h2>
                         <ul>
