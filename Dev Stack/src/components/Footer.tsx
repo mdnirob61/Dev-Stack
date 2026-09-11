@@ -4,10 +4,10 @@ const Footer = () => {
     return (
         <div>
             <hr className='mt-20 text-[#d5d7d8]' />
-            <div className='mt-15 container mx-auto flex justify-between'>
+            <div className='mt-15 container mx-auto px-5 sm:px-8 lg:px-10 flex flex-col lg:flex-row justify-between gap-10'>
                 <div className='flex flex-col'>
                     <img className='h-10 w-[160px]' src={Logo} alt="" />
-                    <p className='text-[#64748B] mt-3'>Curated tools, technologies, and resources for developers building <br></br>
+                    <p className='text-[#64748B] mt-3 max-w-md'>Curated tools, technologies, and resources for developers building <br></br>
                         modern software.</p>
                     <ul className='flex items-center gap-5 mt-7'>
                         <li className='font-semibold text-[#475569]'>Github</li>
@@ -15,7 +15,7 @@ const Footer = () => {
                         <li className='font-semibold text-[#475569]'>LinkedIn</li>
                     </ul>
                 </div>
-                <div className='flex justify-between gap-50'>
+                <div className='flex flex-wrap justify-between gap-10 lg:gap-20'>
                     <div>
                         <h2 className='font-semibold mb-4 text-xl'>PRODUCT</h2>
                         <ul>
@@ -41,8 +41,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <hr className='mt-15 text-[#d5d7d8] conatainer mx-auto' />
-            <div className='flex justify-between container mx-auto my-10'>
+            <hr className='mt-15 text-[#d5d7d8]' />
+            <div className='container mx-auto px-5 sm:px-8 lg:px-10 my-10 flex flex-col sm:flex-row items-center justify-between gap-4'>
                 <p className='text-[#94A3B8] text-sm'>© 2026 Dev Stack. All rights reserved.</p>
                 <ul className='flex justify-between gap-6'>
                     <li className='text-[#94A3B8] text-sm'>Privacy</li>
