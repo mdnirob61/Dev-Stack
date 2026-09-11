@@ -6,12 +6,12 @@ const Footer = () => {
             <hr className='mt-20 text-[#d5d7d8]' />
             <div className='mt-15 container mx-auto px-5 sm:px-8 lg:px-10 flex flex-col lg:flex-row justify-between gap-10'>
                 <div className='flex flex-col'>
-                    <img className='h-10 w-[160px]' src={Logo} alt="" />
-                    <p className='text-[#64748B] mt-3 max-w-md'>Curated tools, technologies, and resources for developers building <br></br>
+                    <img className='h-10 w-[160px]' src={Logo} alt="Dev Stack" />
+                    <p className='text-[#64748B] mt-3 max-w-md'>Curated tools, technologies, and resources for developers building
                         modern software.</p>
                     <ul className='flex items-center gap-5 mt-7'>
                         <li className='font-semibold text-[#475569]'>Github</li>
-                        <li className='font-semibold text-[#475569]'>Twiter</li>
+                        <li className='font-semibold text-[#475569]'>Twitter</li>
                         <li className='font-semibold text-[#475569]'>LinkedIn</li>
                     </ul>
                 </div>

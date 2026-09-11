@@ -4,10 +4,6 @@ import Navbar from './components/Navbar'
 import type { Technology } from './technology';
 import Technologies from './components/Technologies';
 import Footer from './components/Footer';
-import YourStack from './components/YourStack';
-// import { ToastContainer } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
-
 
 const technologyFetch = async (): Promise<Technology[]> => {
   const res = await fetch("/technology.json");

@@ -1,5 +1,6 @@
 import { type Dispatch, type SetStateAction } from 'react';
 import type { Technology } from '../technology';
+import { Bounce, toast } from 'react-toastify';
 
 interface YourStackProps {
     stack: Technology[];
@@ -12,6 +13,18 @@ const YourStack = ({ stack, setStack }: YourStackProps) => {
         const newStack = stack.filter((technology) => technology.id !== id);
         // console.log(newStack)
         setStack(newStack);
+
+        toast.error('Technology removed from stack', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
     return (
@@ -47,12 +60,25 @@ const YourStack = ({ stack, setStack }: YourStackProps) => {
             }
             {stack.length > 0 &&
                 <button
-                    onClick={() => setStack([])}
+                    onClick={() => {
+                        setStack([]);
+                        toast.error('All technologies removed from stack', {
+                            position: "bottom-right",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: false,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                            transition: Bounce,
+                        });
+                    }}
                     className="font-bold text-xl w-full mt-5 border-2 border-red-200 text-red-500 py-2 rounded-md hover:bg-red-50 transition">
                     Remove All
                 </button>
             }
-        </div>
+        </div >
     );
 };
 

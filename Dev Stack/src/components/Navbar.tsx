@@ -44,7 +44,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                     {/* Auth Buttons */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-5">
                         <button className="sm:block">
                             Sign In
                         </button>
