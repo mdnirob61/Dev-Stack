@@ -50,6 +50,22 @@ stack easily.
 
 ---
 
+## 🔗 Project Links
+
+<p align="center">
+
+<a href="https://dev-stack-is-on.netlify.app/">
+  <img src="https://img.shields.io/badge/Live%20Site-Visit%20Now-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Site">
+</a>
+
+<a href="https://github.com/mdnirob61/Dev-Stack">
+  <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
+</a>
+
+</p>
+
+---
+
 
 # ⚛️ React Questions & Answers
 
