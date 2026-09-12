@@ -43,7 +43,6 @@ stack easily.
 - ⚛️ **React**
 - 📘 **TypeScript**
 - 🎨 **Tailwind CSS**
-- 🌼 **DaisyUI**
 - 🔔 **React Toastify**
 - 🎯 **React Icons**
 - ⚡ **Vite**
