@@ -45,10 +45,10 @@ const Footer = () => {
             <hr className='mt-15 text-[#d5d7d8]' />
             <div className='container mx-auto px-5 sm:px-8 lg:px-10 my-10 flex flex-col sm:flex-row items-center justify-between gap-4'>
                 <p className='text-[#94A3B8] text-sm'>© 2026 Dev Stack. All rights reserved.</p>
-                <ul className='flex justify-between gap-6'>
-                    <li className='text-[#94A3B8] text-sm'>Privacy</li>
-                    <li className='text-[#94A3B8] text-sm'>Terms</li>
-                </ul>
+                <div className='flex justify-between gap-6'>
+                    <a className='text-[#94A3B8] text-sm' href=''>Privacy</a>
+                    <a className='text-[#94A3B8] text-sm' href=''>Terms</a>
+                </div>
             </div>
         </div>
     );

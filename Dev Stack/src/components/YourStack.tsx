@@ -14,7 +14,9 @@ const YourStack = ({ stack, setStack }: YourStackProps) => {
         // console.log(newStack)
         setStack(newStack);
 
-        toast.error('Technology removed from stack', {
+        const technology = stack.find((technology) => technology.id === id);
+
+        toast.error(`${technology?.name} removed from stack`, {
             position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: false,
